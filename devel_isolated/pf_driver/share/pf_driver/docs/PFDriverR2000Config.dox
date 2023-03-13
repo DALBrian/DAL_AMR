@@ -1,0 +1,31 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~ip_mode" : \b [int] ip_mode value determines the method used by the device to determine its own IP and network conﬁguration. min: -2147483648, default: 2, max: 2147483647
+- \b "~ip_address" : \b [str] IP address min: , default: 10.0.10.9, max: 
+- \b "~subnet_mask" : \b [str] IP netmask min: , default: 255.0.0.0, max: 
+- \b "~gateway" : \b [str] IP gateway min: , default: 0.0.0.0, max: 
+- \b "~scan_frequency" : \b [int] The parameter scan_frequency defines the set point for the rotational speed of the sensor head and therefore the number of scans recorded per second. For the R2000 valid values range from 10 Hz to 50 Hz with steps of 1 Hz. min: 10, default: 35, max: 50
+- \b "~scan_direction" : \b [str] The parameter scan_direction defines the direction of rotation of the sensors head. User applications can choose between clockwise rotation (cw) or counter-clockwise rotation (ccw). min: , default: ccw, max: 
+- \b "~samples_per_scan" : \b [int] The parameter samples_per_scan defines the number of samples recorded during one revolution of the sensor head (for details please refer to section 3.1 in the R2000 Ethernet communication protocol). min: 72, default: 3600, max: 25200
+- \b "~hmi_display_mode" : \b [str] The parameter hmi_display_mode controls the content of the HMI LED display during normal operation, i.e. while neither warnings nor errors are displayed and the user did not activate the HMI menu. min: , default: static_logo, max: 
+- \b "~hmi_language" : \b [str] change display language min: , default: english, max: 
+- \b "~hmi_button_lock" : \b [str] lock HMI buttons min: , default: off, max: 
+- \b "~hmi_parameter_lock" : \b [str] set HMI to read-only min: , default: off, max: 
+- \b "~hmi_static_text_1" : \b [str] text line 1 for mode static_text (max. 30 chars) min: , default: Pepperl+Fuchs, max: 
+- \b "~hmi_static_text_2" : \b [str] text line 2 for mode static_text (max. 30 chars) min: , default: R2000, max: 
+- \b "~locator_indication" : \b [str] LED locator indication min: , default: off, max: 
+- \b "~operating_mode" : \b [str] The operating_mode, always measure after power on, can be temporarily set to emitter_off to disable the laser pulse, e.g. in order to avoid affecting other scanners. min: , default: measure, max: 
+- \b "~address" : \b [str] When initiating scan data output, request_handle_udp must be given an IPv4 address and port in order to know where to send scandata to. min: , default: , max: 
+- \b "~port" : \b [int] See address min: -2147483648, default: 0, max: 2147483647
+- \b "~packet_type" : \b [str] Packet type for scan data output min: , default: A, max: 
+- \b "~packet_crc" : \b [str] Append extra CRC32 for scan data integrity check min: , default: , max: 
+- \b "~watchdog" : \b [str] Cease scan data output if watchdog isn't fed in time min: , default: off, max: 
+- \b "~watchdogtimeout" : \b [int] Maximum time for client to feed watchdog min: -2147483648, default: 60000, max: 2147483647
+- \b "~start_angle" : \b [double] angle of first scan point for scan data output min: -std::numeric_limits<double>::infinity(), default: -1800000.0, max: std::numeric_limits<double>::infinity()
+- \b "~max_num_points_scan" : \b [int] limit number of points in scan data output min: -2147483648, default: 0, max: 2147483647
+- \b "~skip_scans" : \b [int] reduce scan output rate to every (n+1)th scan min: -2147483648, default: 0, max: 2147483647
+- \b "~user_tag" : \b [str] User defined name (max. 32 chars) min: , default: , max: 
+- \b "~user_notes" : \b [str] User notes (max. 1000 Byte) min: , default: , max: 
+

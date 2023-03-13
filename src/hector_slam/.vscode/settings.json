@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/dal/ros1_ws/src/hector_slam/devel/lib/python2.7/dist-packages",
+        "/home/dal/ros1_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/dal/ros1_ws/src/hector_slam/devel/lib/python2.7/dist-packages",
+        "/home/dal/ros1_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

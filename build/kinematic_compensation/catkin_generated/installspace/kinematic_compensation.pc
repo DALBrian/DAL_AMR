@@ -1,0 +1,8 @@
+prefix=/home/dal/ros1_ws/install
+
+Name: kinematic_compensation
+Description: Description of kinematic_compensation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

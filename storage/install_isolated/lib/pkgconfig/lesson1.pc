@@ -1,0 +1,8 @@
+prefix=/home/dal/ros1_ws/install_isolated
+
+Name: lesson1
+Description: Description of lesson1
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,1 @@
+set(ORDERED_PATHS "/home/dal/ros1_ws/src/karto_slam/sparse_bundle_adjustment/include")

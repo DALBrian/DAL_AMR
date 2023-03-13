@@ -1,0 +1,32 @@
+\subsubsection usage Usage
+\verbatim
+<node name="r2000_node" pkg="pf_driver" type="r2000_node">
+  <param name="ip_mode" type="int" value="2" />
+  <param name="ip_address" type="str" value="10.0.10.9" />
+  <param name="subnet_mask" type="str" value="255.0.0.0" />
+  <param name="gateway" type="str" value="0.0.0.0" />
+  <param name="scan_frequency" type="int" value="35" />
+  <param name="scan_direction" type="str" value="ccw" />
+  <param name="samples_per_scan" type="int" value="3600" />
+  <param name="hmi_display_mode" type="str" value="static_logo" />
+  <param name="hmi_language" type="str" value="english" />
+  <param name="hmi_button_lock" type="str" value="off" />
+  <param name="hmi_parameter_lock" type="str" value="off" />
+  <param name="hmi_static_text_1" type="str" value="Pepperl+Fuchs" />
+  <param name="hmi_static_text_2" type="str" value="R2000" />
+  <param name="locator_indication" type="str" value="off" />
+  <param name="operating_mode" type="str" value="measure" />
+  <param name="address" type="str" value="" />
+  <param name="port" type="int" value="0" />
+  <param name="packet_type" type="str" value="A" />
+  <param name="packet_crc" type="str" value="" />
+  <param name="watchdog" type="str" value="off" />
+  <param name="watchdogtimeout" type="int" value="60000" />
+  <param name="start_angle" type="double" value="-1800000.0" />
+  <param name="max_num_points_scan" type="int" value="0" />
+  <param name="skip_scans" type="int" value="0" />
+  <param name="user_tag" type="str" value="" />
+  <param name="user_notes" type="str" value="" />
+</node>
+\endverbatim
+

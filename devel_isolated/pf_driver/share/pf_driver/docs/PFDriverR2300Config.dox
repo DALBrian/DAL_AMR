@@ -1,0 +1,29 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~ip_mode" : \b [str] ip_mode value determines the method used by the device to determine its own IP and network conﬁguration. min: , default: autoip, max: 
+- \b "~ip_address" : \b [str] IP address min: , default: 10.0.10.76, max: 
+- \b "~subnet_mask" : \b [str] IP netmask min: , default: 255.0.0.0, max: 
+- \b "~gateway" : \b [str] IP gateway min: , default: 0.0.0.0, max: 
+- \b "~user_tag" : \b [str] Short UTF8 string for user purposes, up to 32 bytes not chars! (32 chars on R2000) min: , default: OMD10M-R2300, max: 
+- \b "~layer_enable" : \b [str] An on or off value for each of the layers indexed 0..3 determines whether measurement takes place in that layer. When setting, specify the values as comma-separated list. min: , default: on,on,on,on, max: 
+- \b "~scan_frequency" : \b [int] The scan_frequency determines the number of scans taken per second. A scan means a contiguous set of measurements taken within range measure_start_angle to measure_stop_angle. Changing the scan_frequency to either 50 or 100 Hz as a side effect also determines the angular resolution: 0.1° at 50 Hz or 0.2° at 100 Hz. min: -2147483648, default: 100, max: 2147483647
+- \b "~scan_direction" : \b [str] The scan_direction may allow to change the direction of scanning and therefore also the order of the measurements (direction of ﬁrst measurement) in time. Currently, the setting is ﬁxed to 'ccw' (counter-clockwise, mathematically positive), and 'cw' (clockwise) is not really supported. min: , default: ccw, max: 
+- \b "~measure_start_angle" : \b [double] measure_start_angle (unit: 1/10000 degree) limits the scanning range at one end, while measure_stop_angle determines the other end limit. Scans consist of all samples exactly at and between those two limits, taken at angles rounded to multiples of the current angular resolution as determined by scan_frequency. This is a persistent setting, kept in persistent memory. For dynamic selection of measurement range without wearing out parameter memory, it is recommended to utilize the Scan output options start_angle and max_num_points_scan instead. min: -500000.0, default: -500000.0, max: 500000.0
+- \b "~measure_stop_angle" : \b [double] See measure_start_angle for description min: -500000.0, default: 500000.0, max: 500000.0
+- \b "~locator_indication" : \b [str] Enable locator indication (on/off) min: , default: off, max: 
+- \b "~pilot_laser" : \b [str] General on or off switch for the red pilot laser. Its actual visibility (in current scanners) is further limited to the range in which measurement takes place, i.e. from measure_start_angle to measure_stop_angle, and also depends on the value of layer_enable. min: , default: off, max: 
+- \b "~pilot_start_angle" : \b [double] Angle where to enable red pilot laser min: -500000.0, default: -500000.0, max: 500000.0
+- \b "~pilot_stop_angle" : \b [double] Angle where to disable red pilot laser min: -500000.0, default: 500000.0, max: 500000.0
+- \b "~operating_mode" : \b [str] The operating_mode, always measure after power on, can be temporarily set to emitter_off to disable the laser pulse, e.g. in order to avoid affecting other scanners. min: , default: measure, max: 
+- \b "~address" : \b [str] When initiating scan data output, request_handle_udp must be given an IPv4 address and port in order to know where to send scandata to. The IPv4 typically should be the IP address of the host who also initiates the connection, e.g. 10.0.10.10, the port something like 6464. min: , default: , max: 
+- \b "~port" : \b [int] See address min: -2147483648, default: 0, max: 2147483647
+- \b "~packet_type" : \b [str] Packet type for scan data output (always C1 on R2300) min: , default: C1, max: 
+- \b "~packet_crc" : \b [str] Append extra CRC32 for scan data integrity check (currenty always none on R2300) min: , default: , max: 
+- \b "~watchdog" : \b [str] Cease scan data output if watchdog isn't fed in time (always off on R2300) min: , default: off, max: 
+- \b "~watchdogtimeout" : \b [int] Maximum time for client to feed watchdog min: -2147483648, default: 0, max: 2147483647
+- \b "~start_angle" : \b [double] Specifying a start_angle (in 1/10000 degree) allows to reduce the output of data. ∗ While device global settings measure_start_angle and measure_stop_angle determine the range where actual measurements (and laser pulses) take place, start_angle may be used to tell the scanner to include only a subset of the data (starting at or after start_angle) in the scan output. This is provided for compatibility with R2000, where more than one consumer might want different portions of the data, and so you don't have to dynamically update measure_start_angle continuously just to get another range output. The default is -1800000, which means all data. min: -500000.0, default: -500000.0, max: std::numeric_limits<double>::infinity()
+- \b "~max_num_points_scan" : \b [int] Specifying a max_num_points_scan (in 1/10000 degree) allows to reduce the output of data to the given number of measurements (or less if there are less in actual scan range). The default is 0, meaning all data. Note that the same number of measurements may cover double (or half) the angular range dependent on device global setting scan_frequency and thus angular resolution. min: 0, default: 0, max: 2147483647
+- \b "~skip_scans" : \b [int] Omit this number of scans (x layers) between output (always 0) min: 0, default: 0, max: 2147483647
+

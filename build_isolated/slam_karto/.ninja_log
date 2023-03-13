@@ -1,0 +1,6 @@
+# ninja log v5
+0	3110	1677050583474547961	CMakeFiles/slam_karto.dir/src/spa_solver.cpp.o	e5a109c12c6ecf3c
+0	5377	1677050586362534093	CMakeFiles/slam_karto.dir/src/slam_karto.cpp.o	8c09bf14f8ae3c93
+5378	5671	1677050586662532652	/home/dal/ros1_ws/devel_isolated/slam_karto/lib/slam_karto/slam_karto	e83e2c45a324c495
+2	15	0	CMakeFiles/install.util	3eb60c5fcb8f314e
+2	10	0	CMakeFiles/install.util	3eb60c5fcb8f314e

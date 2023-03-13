@@ -1,0 +1,8 @@
+prefix=/home/dal/ros1_ws/install
+
+Name: pf_description
+Description: Description of pf_description
+Version: 1.2.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

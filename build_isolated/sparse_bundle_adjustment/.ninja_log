@@ -1,0 +1,11 @@
+# ninja log v5
+0	3170	1677050569394615451	CMakeFiles/sba.dir/src/node.cpp.o	384ccb60cb181b18
+0	4182	1677050570402610626	CMakeFiles/sba.dir/src/csparse.cpp.o	461749d43293e166
+0	5268	1677050571494605398	CMakeFiles/sba.dir/src/proj.cpp.o	358843f621915f7a
+0	5724	1677050571946603234	CMakeFiles/sba.dir/src/sba_file_io.cpp.o	41bdf3a52aa26eb9
+0	6349	1677050572574600226	CMakeFiles/sba.dir/src/spa2d.cpp.o	f1ec5c1cb7e4e624
+0	7136	1677050573358596471	CMakeFiles/sba.dir/src/sba.cpp.o	2b852d55d71ce0a
+0	7746	1677050573970593539	CMakeFiles/sba.dir/src/spa.cpp.o	fb2f017058e70efb
+7747	8333	1677050574558590722	/home/dal/ros1_ws/devel_isolated/sparse_bundle_adjustment/lib/libsba.so	a5d1e31c8ae2f97e
+1	175	0	CMakeFiles/install.util	25f1d074547cb026
+0	9	0	CMakeFiles/install.util	25f1d074547cb026

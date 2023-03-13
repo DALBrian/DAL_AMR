@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+
+<node name="motor_control" pkg="motor_control" type="motor_control" output="screen"/>
+<node name="talker" pkg="motor_control" type="dummypublisher" output="screen"/>
+
+</launch>

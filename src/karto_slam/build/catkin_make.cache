@@ -1,0 +1,2 @@
+slam_karto
+-DCATKIN_DEVEL_PREFIX=/home/dal/ros1_ws/src/karto_slam/devel -DCMAKE_INSTALL_PREFIX=/home/dal/ros1_ws/src/karto_slam/install -G Unix Makefiles

@@ -1,0 +1,30 @@
+\subsubsection usage Usage
+\verbatim
+<node name="r2300_node" pkg="pf_driver" type="r2300_node">
+  <param name="ip_mode" type="str" value="autoip" />
+  <param name="ip_address" type="str" value="10.0.10.76" />
+  <param name="subnet_mask" type="str" value="255.0.0.0" />
+  <param name="gateway" type="str" value="0.0.0.0" />
+  <param name="user_tag" type="str" value="OMD10M-R2300" />
+  <param name="layer_enable" type="str" value="on,on,on,on" />
+  <param name="scan_frequency" type="int" value="100" />
+  <param name="scan_direction" type="str" value="ccw" />
+  <param name="measure_start_angle" type="double" value="-500000.0" />
+  <param name="measure_stop_angle" type="double" value="500000.0" />
+  <param name="locator_indication" type="str" value="off" />
+  <param name="pilot_laser" type="str" value="off" />
+  <param name="pilot_start_angle" type="double" value="-500000.0" />
+  <param name="pilot_stop_angle" type="double" value="500000.0" />
+  <param name="operating_mode" type="str" value="measure" />
+  <param name="address" type="str" value="" />
+  <param name="port" type="int" value="0" />
+  <param name="packet_type" type="str" value="C1" />
+  <param name="packet_crc" type="str" value="" />
+  <param name="watchdog" type="str" value="off" />
+  <param name="watchdogtimeout" type="int" value="0" />
+  <param name="start_angle" type="double" value="-500000.0" />
+  <param name="max_num_points_scan" type="int" value="0" />
+  <param name="skip_scans" type="int" value="0" />
+</node>
+\endverbatim
+
