@@ -17,7 +17,7 @@ class driver_kinekatic():
             self.master.execute(3, 6, 610, output_value = motor_speed3)
             self.master.execute(4, 6, 610, output_value = motor_speed4)
     """
-    def __init__(self, driver_connection, speed = 40):
+    def __init__(self, driver_connection, speed = 55):
         self.master = driver_connection.master
         self.basespeed = speed
         print("Current motor speed: ", output_value = self.basespeed)
