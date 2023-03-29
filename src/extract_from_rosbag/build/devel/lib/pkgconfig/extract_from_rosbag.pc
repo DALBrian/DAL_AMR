@@ -1,0 +1,8 @@
+prefix=/home/dal/ros1_ws/src/extract_from_rosbag/build/devel
+
+Name: extract_from_rosbag
+Description: Description of extract_from_rosbag
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
